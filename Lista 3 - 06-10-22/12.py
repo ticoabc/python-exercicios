@@ -18,37 +18,34 @@
 #Data atual: 29-Set-22
 
 #Leitura de Variáveis
-h=220
-desc_inss=0.10
-desc_fgts=0.11
-
+ht = 220
 
 print('Exercício 12 - Folha de Pagamento')
-s = float(input('Digite o valor da hota trabalhada R$: '))
+s = float(input('\nDigite o valor da hota trabalhada R$: '))
+sb = s * ht
 
-#Lógica cálculos e Exibição de Resultados
-if  s <= 900.0:
-    sb = s * h
-    inss = sb * desc_inss
-    fgts = sb * desc_fgts
-    tot_desc = inss + fgts
-    sl = sb - tot_desc
-    
-    print('Salário Bruto R$:', sb)
-    print('(-) IR (5%):', 'Isento')
-    print('(-) INSS (10%) R$:', inss)
-    print('FGTS (11%) R$:', fgts)
-    print('Total de descontos R$:', tot_desc)
-    print('Salário Liquido R$:', sl)
-     
-elif:
-     r = s * p4
-     ns = r + s
-     print('salário antes do reajuste R$:', s)
-     print('percentual de aumento aplicado:', p4*100,'%')
-     print('o valor do aumento R$:', r)
-     print('o novo salário, após o aumento R$:', ns)
+#Lógica cálculos
 
+if  sb <= 900.0:
+    irpf = 0
+elif sb > 900.0 and sb <= 1500.0:
+    irpf = 0.05
+elif sb > 1500.0 and sb <= 2500.0:
+    irpf = 0.1
+else:
+    irpf = 0.2
 
+desc_irpf = sb * irpf
+desc_inss = sb * 0.1
+desc_fgts = sb * 0.11
+tot_desct = desc_irpf + desc_inss
+sl = sb - tot_desct
 
+#Exibição de Resultados
 
+print('\nSalário Bruto......... R$:', sb) 
+print('(-) IR (5%)............R$:', desc_irpf)
+print('(-) INSS (10%).........R$:', desc_inss)
+print('FGTS (11%).............R$:', desc_fgts)
+print('Total de descontos.....R$:', tot_desct)
+print('Salário Liquido........R$:', sl)
