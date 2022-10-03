@@ -23,7 +23,7 @@ c=float(input('Digite o valor de c: '))
 
 if a==0:    
     try:
-        sys.exit('')
+        sys.exit('')#interrompe o script neste ponto
     except SystemExit:
         print('\nNão é uma equação do 2° grau')
         sys.exit()
@@ -32,7 +32,12 @@ else:
     
 if delta < 0:
     print('\nDelta:',delta)
-    print('Como o Delta é negativo, a equação não possui raízes reais')
+    try:
+        sys.exit('')#interrompe o script neste ponto
+    except SystemExit:
+        print('Como o Delta é negativo, a equação não possui raízes reais')
+        sys.exit()
+
 else:
     x1 = (-b + math.sqrt(delta)) / 2 * a
     x2 = (-b - math.sqrt(delta)) / 2 * a
