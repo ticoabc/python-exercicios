@@ -25,20 +25,20 @@ if opcao==1:
     n=int(input('\nDigite um número: '))
     if (n%2)==0:
          print('O número digitado é Par')
-         os.close(1)
     else:
         print('O número digitado é ímpar')
-        os.close(1)
+elif opcao==0:
+    os.close(1)
 
 if opcao==2:
     print('\n*****Positivo ou Negativo ?*****')
     n=float(input('\nDigite um número: '))
     if n >= 0:
         print('O número digitado é Positivo')
-        os.close(1)
     else:
         print('O número digitado é Negativo')
-        os.close(1)
+elif opcao==0:
+    os.close(1)
     
 if opcao==3:
     print('\n*****Inteiro ou Decimal?*****')
