@@ -7,11 +7,11 @@
 #Leitura de Variáveis
 print('Exercício 25 - 5 perguntas para uma pessoa')
 
-contagem = 0
+cont = 0
 tel = str(input('Telefonou para a vítima? '))
 if tel == 'sim':
     contagem =+ 1
-
+    
 esteve = str(input('Esteve no local do crime? '))
 if esteve == 'sim':
     contagem =+ 1

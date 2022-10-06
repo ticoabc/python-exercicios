@@ -12,7 +12,7 @@ print('Exercício 3 - Gênero?')
 g=str(input('Digite uma Letra [F - M - O]: ').upper())
 
 
-#Exibir Resultados 
+#Exibir Resultados
 if  g == 'F':
     print('O gênero digitado é Feminino')
 elif g == 'M':
