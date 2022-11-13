@@ -6,7 +6,7 @@
 #Data atual: 09-Nov-22
 
 #Leitura de Variáveis
-print('Exercício 1 - Vetor 5 Números \n')
+print('Exercício 2 - Vetor 5 Números ordem inversa \n')
 VectorList = []
 print('Insira 5 números')
 

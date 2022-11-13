@@ -20,6 +20,7 @@ while quant != count:
     numero = float(input("Digite um número: "))
     while numero // 1 != numero or numero < 0 or 0 or numero < 16:
         numero = float(input("Digite um número[erro]: "))
-
-    print("Fatorial do número digitado: ", math.factorial(numero))
-    count += 1
+    else:
+        print("Fatorial do número digitado: ", math.factorial(numero))
+        count += 1
+    break

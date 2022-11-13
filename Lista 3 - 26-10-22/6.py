@@ -9,7 +9,7 @@
 #Data atual: 26-Out-22
 
 #Leitura de Variáveis
-print('Exercício 6 - abaixo do outro e ao lado do outro')
+print('Exercício 6 - Abaixo e ao lado do outro')
 for i in range(1, 21):
     print(i)
 

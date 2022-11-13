@@ -1,5 +1,5 @@
 #Lista 5 - Listas
-#Exercício 9 - Utilizando listas faça um programa que faça 5 perguntas para
+#Exercício 14 - Utilizando listas faça um programa que faça 5 perguntas para
                 #uma pessoa sobre um crime. As perguntas são:
 #a) "Telefonou para a vítima?"
 #b) "Esteve no local do crime?"

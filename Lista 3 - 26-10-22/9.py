@@ -7,7 +7,7 @@
 #Data atual: 26-Out-22
 
 #Leitura de Variáveis
-print('Exercício 8 - Apenas os números ímpares')
+print('Exercício 9 - Apenas os números ímpares')
 
 for i in range(3, 50, 2):
     print(i)

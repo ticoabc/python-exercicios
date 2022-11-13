@@ -9,12 +9,14 @@
 #Leitura de Variáveis
 
 print('Exercício 17 - Fatorial !N')
-numero = int(input("Digite um número: "))
-count1 = 0
-count = 1
-while count1 < numero:
-    fatorial = numero * (numero - count)
-    count = count - 1
-    count1 = count + 1
 
-print(fatorial)
+numero = int(input("Digite um número: "))
+
+resultado=1
+count=1
+
+while count <= numero:
+    resultado *= count
+    count += 1
+
+print(resultado)

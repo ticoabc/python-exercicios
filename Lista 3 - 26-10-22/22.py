@@ -18,6 +18,7 @@ lista = []
 if numero % 2 != 0 or numero == 2:
     print("primo")
 else:
+    print("não é primo")
     for i in range(numero):
         if numero % (i + 1) == 0:
 

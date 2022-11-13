@@ -25,4 +25,3 @@ for i in range(numero + 1):
         divisoes += 1
 print("Números primos: ", lista)
 print("Número de divisões", divisoes)
-

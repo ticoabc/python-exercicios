@@ -17,16 +17,5 @@ for i in range(4):
     average += NoteList[i]
     average = average / 4
                     
-print(NoteList)
-print(average)
-
-
-# listaNotas = []
-# media = 0
-# print ('Informe as 4 notas')
-# for i in range(4):
-# 	listaNotas.append(float(input('Nota '+ str(i+1) + ':\n')))
-# 	media += listaNotas[i]
-# media = media/4
-# print (listaNotas) 
-# print (media)
+print('Notas', NoteList)
+print('Média', average)

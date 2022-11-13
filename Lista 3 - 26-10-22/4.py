@@ -17,7 +17,7 @@ populaçãoB=200000
 ano=0
 
 #Leitura de Variáveis
-
+print('Exercício 4 - População A & População B')
 while populaçãoA < populaçãoB:
 	populaçãoA+=round((populaçãoA*3.0)/100)
 	populaçãoB+=round((populaçãoB*1.5)/100)

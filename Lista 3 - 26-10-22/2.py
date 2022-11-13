@@ -10,6 +10,8 @@
 #Constantes e Variáveis
 #Leitura de Variáveis
 
+print('Exercício 2 - Cadastro de usuário')
+
 print("Cadastro de usuário:")
 usuario=str(input("usuário: "))
 senha=str(input("senha: "))

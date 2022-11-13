@@ -11,10 +11,12 @@
 #Leitura de Variáveis
 
 print('Exercício 1 - Continue pedindo...')
+
 n=float(input("informe um numero de 0 a 10: "))
 
 #Cálculos
 
-while (n>10) or (n<0):
-    nota=float(input("informe um numero de 0 a 10: "))
-
+while n>10 or n<0:
+    n=float(input("informe um numero de 0 a 10: "))
+else:
+	print("Obrigado!!")

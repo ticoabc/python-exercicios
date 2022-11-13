@@ -12,6 +12,7 @@
 
 #Constantes e Variáveis
 #Leitura de Variáveis
+print('Exercício 3 - Validando informações')
 nome = input("Qual seu nome [maior que 3 caracteres]: ")
 idade = int(input("Sua idade [entre 0 e 150]: "))
 salario = float(input("Salário: "))
