@@ -12,17 +12,18 @@ ParList = []
 NotParList = []
 ListNumber = []
 number = 0
-print('Insira 6 números inteiros')
+print('Insira 6 números inteiros \n')
 
 #Lógica cálculos e exibição de resultados
-for i in range(6):
-    ListNumber.append((int(input('Número: '+ str(i+1) + ':\n'))))
-    number = ListNumber[i]
-    #print(number)
-if(number%2 == 0):
-        ParList.append(number)
-else:
- 	NotParList.append(number)
-print('Vetor', ListNumber)
+for i in range(1, 6):
+
+    n = int(input('Digite o %dº Número: ' %i))
+    ListNumber.append(n)
+    if(n%2 == 0):
+            ParList.append(n)
+    else:
+            NotParList.append(n)
+            
+print('\nVetor', ListNumber)
 print('vetor PAR', ParList)
 print('vetor ÍMPAR', NotParList)

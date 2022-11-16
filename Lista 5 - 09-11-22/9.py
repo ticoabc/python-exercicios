@@ -1,5 +1,5 @@
 #Lista 5 - Listas
-#Exercício 9 - Faça um Programa que leia um vetor A com 10 números inteiros,
+#Exercício 9 - Faça um Programa que leia um vetor A com 5 números inteiros,
                 #calcule e mostre a soma dos quadrados dos elementos do vetor.
 
 #Autor: Tiago de Freias
@@ -8,12 +8,10 @@
 #Leitura de Variáveis
 numeros = []
 
-
-
 print('Exercício 9 - soma dos quadrados dos elementos \n')
 
 #Lógica cálculos e exibição de resultados
-for i in range(1, 11):
+for i in range(1, 6):
     n = int(input('Digite %dº número: ' % i))
     numeros.append(n)
 

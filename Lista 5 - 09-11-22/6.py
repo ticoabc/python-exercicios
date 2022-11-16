@@ -8,18 +8,21 @@
 
 #Leitura de Variáveis
 print('Exercício 6 - 4 notas de 2 alunos \n')
-noteList = []
-notasAlunos = []
-#print('Insira 4 notas de 10 alunos')
+averages = []
 
 #Lógica cálculos e exibição de resultados
-for i in range(2):
-    average = 0
-    notasAlunos = []
-    print ('Aluno: ' + str(i + 1))
-    for j in range(4):
-        notasAlunos.append(float(input('Nota: ' + str(j+1) + '\n')))
-        average += notasAlunos[j]
-        print(average)
-        average = average / 4
-        noteList.append(average)
+for i in range(1, 3):
+    soma, average = 0, 0
+    for j in range(1, 5):
+        nota = float(input('Digite a %dº nota do %dº aluno: ' %(i, j)))
+        soma += nota
+    average = soma / 4
+    averages.append(average)
+        
+print('\nMédias: ', average)
+
+alunos = 0
+for k in averages:
+    if k >= 7:
+        alunos += 1
+print('\nNúmero de alunos com média maior ou igual a 7: %d' % alunos)
